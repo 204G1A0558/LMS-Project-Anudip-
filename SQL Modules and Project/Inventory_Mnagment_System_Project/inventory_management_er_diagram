@@ -1,0 +1,14 @@
+// Inventory Management System ER Diagram
+digraph {
+	C [label=Customers]
+	O [label=Orders]
+	OD [label=OrderDetails]
+	P [label=Products]
+	S [label=Suppliers]
+	CA [label=Categories]
+	C -> O [label=places]
+	O -> OD [label=contains]
+	OD -> P [label=represents]
+	P -> S [label=supplied_by]
+	P -> CA [label=belongs_to]
+}
